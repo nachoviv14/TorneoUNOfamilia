@@ -104,36 +104,8 @@ body {
     transition: filter 0.5s ease;
 }
 
-.cross-overlay {
-    position: absolute;
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.7);
-    top: -160px;
-    transition: top 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: grayscale(100%);
-}
 
-.cross-overlay::before {
-    content: '✝';
-    font-size: 60px;
-    color: white;
-    opacity: 0.8;
-}
 
-#cross-overlay-1 {
-    left: 12%;
-    margin-top: 5%;
-}
-
-#cross-overlay-2 {
-    left: 85%;
-    margin-top: -170px;
-}
 
 /* Secciones */
 .section {
@@ -297,34 +269,10 @@ body {
         height: 350px;
     }
 
-    .cross-overlay::before {
-    content: '✝';
-    font-size: 27px;
-    color: white;
-    opacity: 0.8;
-}
-    #cross-overlay-1 {
-    left: 44px;
-    margin-top: 80px;
-}
-.cross-overlay {
-    position: absolute;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.7);
-    top: -160px;
-    transition: top 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: grayscale(20%);
-}
+ 
 
-#cross-overlay-2 {
-    left: 335px;
-    margin-top: -78px;
-}
+
+
 
     .ranking-grid {
         grid-template-columns: 1fr;
