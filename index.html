@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo Familiar de UNO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<!-- Botón flotante del contador UNO -->
+<a href="./Contador uno/contador.html" class="uno-float-btn" target="_blank">
+  <div class="uno-float-icon">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#E53935"/>
+      <text x="12" y="16" text-anchor="middle" fill="white" font-weight="bold" font-family="Arial, sans-serif">UNO</text>
+    </svg>
+  </div>
+  <span class="uno-float-text">CONTADOR</span>
+</a>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/UNO_Logo.svg/1200px-UNO_Logo.svg.png" alt="Logo UNO" class="uno-logo">
+            <nav class="main-nav">
+                <a href="#tabla-posiciones">Tabla</a>
+                <a href="#ultimos-resultados">Resultados</a>
+                <a href="#proximos-partidos">Próximos</a>
+            </nav>
+        </header>
+
+        <section class="family-photo-container">
+            <img src="./forto-fotor-20250223193834.png" alt="Foto familiar" class="family-photo">
+            <div class="cross-overlay" id="cross-overlay-1"></div>
+            <div class="cross-overlay" id="cross-overlay-2"></div>
+        </section>
+
+        <section id="tabla-posiciones" class="section">
+            <h2>Tabla de Posiciones</h2>
+            <div class="ranking-grid" id="ranking-container">
+                <!-- Se llena dinámicamente con JS -->
+            </div>
+        </section>
+
+        <section id="ultimos-resultados" class="section">
+            <h2>Últimos Resultados</h2>
+            <div class="results-container" id="results-container">
+                <!-- Se llena dinámicamente con JS -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

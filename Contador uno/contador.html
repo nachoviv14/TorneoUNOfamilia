@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo UNO | Contador de Puntos</title>
+    <link rel="stylesheet" href="./StyleContador.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1><i class="fas fa-dice"></i> Torneo UNO</h1>
+            <div class="table-selector">
+                <button class="table-btn active" data-table="1">Mesa 1 (5 jugadores)</button>
+                <button class="table-btn" data-table="2">Mesa 2 (4 jugadores)</button>
+                <button class="table-btn" data-table="final">Mesa FINAL (6 jugadores)</button>
+            </div>
+        </header>
+
+        <main class="game-container">
+            <!-- Configuración Inicial -->
+            <div class="setup-panel">
+                <div class="points-limit">
+                    <h2><i class="fas fa-bullseye"></i> Límite de Puntos</h2>
+                    <div class="limit-options">
+                        <label>
+                            <input type="radio" name="limit" value="301" checked>
+                            <span>301 Puntos</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="limit" value="501">
+                            <span>501 Puntos</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="players-selection">
+                    <h2><i class="fas fa-users"></i> Seleccionar Jugadores</h2>
+                    <div class="players-grid" id="players-container">
+                        <!-- Jugadores se cargan dinámicamente -->
+                    </div>
+                </div>
+
+                <button id="start-game" class="btn-primary">
+                    <i class="fas fa-play"></i> Comenzar Partida
+                </button>
+            </div>
+
+            <!-- Tablero de Juego -->
+            <div class="game-board hidden">
+                <div class="game-info">
+                    <h2 id="current-table">Mesa 1</h2>
+                    <div class="limit-display">
+                        Límite: <span id="current-limit">301</span> puntos
+                    </div>
+                </div>
+
+                <div class="scoreboard-container">
+                    <div class="scoreboard-header">
+                        <div class="player-col player-info">Jugador</div>
+                        <div class="player-col total-points">Total</div>
+                        <!-- Rondas se agregarán dinámicamente -->
+                    </div>
+                    <div class="scoreboard-body" id="scoreboard">
+                        <!-- Filas de jugadores se generan dinámicamente -->
+                    </div>
+                </div>
+
+                <div class="game-controls">
+                    <button id="add-round" class="btn-secondary">
+                        <i class="fas fa-plus-circle"></i> Agregar Ronda
+                    </button>
+                    <button id="reset-game" class="btn-danger">
+                        <i class="fas fa-redo"></i> Reiniciar
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <p>Torneo UNO &copy; 2025 | Desarrollado por NACHO!</p>
+        </footer>
+    </div>
+
+    <script src="stotage.js"></script>
+    <script src="scriptc.js"></script>
+</body>
+</html>
